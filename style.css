@@ -1,0 +1,42 @@
+
+#logo-topo{
+    padding: 30px 60px 30px 130px;
+    height: 25px;
+}
+
+#botao-categorias{
+    margin: auto 0px auto;
+}
+
+#campo-busca{
+    width: 500px;
+    height: 40px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+#input-busca{
+    font-family: 'Montserrat';
+    font-size: 12px;
+    border: none;
+    margin: auto 20px auto;
+    height: 35px;
+}
+
+#botao-de-menu{
+
+}
+
+#link-categorias{
+    
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+header{
+    height: 85px;
+    display: flex;
+    background-color: #17ADB4;
+}
