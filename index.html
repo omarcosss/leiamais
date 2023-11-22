@@ -11,34 +11,128 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="index.html"><img src="assets/logo.svg" alt="leia mais" id="logo-topo"></a>
+<header class="header">
+    <div class="header-1">
+
+        <a href="#" class="logo">Leia<strong>Mais</strong></a>
+    
+        <form action="" class="form-busca">
+            <input type="search" name="" placeholder="qual livro você procura?" id="campo-busca">
+            <label for="campo-busca" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-basket-shopping"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <div id="login-btn" class="fas fa-user"></div>
         </div>
-        <div id="botao-categorias">
-            <a href="" id="link-categorias">
-                <img src="assets/icon-menu.svg" alt="botao de menu" id>
-                Categorias
-            </a>
-        </div>
-        <div id="campo-busca">
-            <input type="text" id="input-busca" name="input-busca" placeholder="qual livro você procura?">
-            <a id="botao-busca" href=""><img id="icon-lupa" src="assets/icon-lupa.svg" alt="lupa" ></a>
-        </div>
-        <div>
+    </div>
+    
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#inicio">inicio</a>
+            <a href="#em-alta">em alta</a>
+            <a href="#novidades">novidades</a>
+            <a href="#avaliacoes">avaliações</a>
+        </nav>
+    </div>
+        
+    <!-- 
+    <div id="botao-categorias">
+        <button id="link-categorias">
+            <img src="assets/icon-menu.svg" alt="botao de menu" id>
+            Categorias
+        </button>
+        <a href="" >
             
-            <a id="botao-cesta" href=""><img id="icon-cesta" src="/assets/icon-cesta.svg" alt="cesta de compras"></a>
+        </a>
+    </div>
+    <div id="campo-busca">
+        <input type="text" id="input-busca" name="input-busca" placeholder="qual livro você procura?">
+        <a id="botao-busca" href=""><img id="icon-lupa" src="assets/icon-lupa.svg" alt="lupa" ></a>
+    </div>
+    <div>
+        
+        <a id="botao-cesta" href=""><img id="icon-cesta" src="/assets/icon-cesta.svg" alt="cesta de compras"></a>
+    </div> -->
+</header>
+
+<!-- navbar inferior para mobile -->
+<nav class="bottom-navbar">
+    <a href="#inicio" class="fas fa-home"></a>
+    <a href="#em-alta" class="fas fa-list"></a>
+    <a href="#novidades" class="fas fa-tags"></a>
+    <a href="#avaliacoes" class="fas fa-comments"></a>
+</nav>
+
+<!-- formulario de login -->
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+    
+    <form action="">
+        <h3>Entrar</h3>
+        <span>Nome de Usuário</span>
+        <input type="email" name="" class="box" placeholder="digite seu email ou user">
+        <span>Senha</span>
+        <input type="password" name="" class="box" placeholder="digite a sua senha">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="lembrar-de-mim">
+            <label for="lembrar-de-mim">Lembrar de mim</label>
         </div>
-    </header>
-    
-    
-    
-    
-    
-    <script src="main.js"></script>
+        <input type="submit" value="Entrar" class="btn">
+        <input type="submit" value="Cadastre-se" class="btn cadastro">
+        <!-- <p><a href="#">Criar conta</a></p> -->
+        <p><a href="#">Esqueci minha senha</a></p>
+    </form>
+
+</div>
+
+<!-- pagina home -->
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>até 73% de desconto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at elementum metus, quis porttitor dui. Sed eu nibh pellentesque magna dapibus lobortis.</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="/assets/livros/biblioteca da meia noite.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="/assets/livros/amanha amanha amanha.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="/assets/livros/mr mercedes.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="/assets/livros/o vilarejo.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="/assets/livros/percy jackson ladrão de raios.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="/assets/livros/vespera.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="/assets/livros/viola davis.jpg" alt=""></a>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
