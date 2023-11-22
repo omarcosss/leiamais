@@ -9,22 +9,42 @@
 }
 
 #campo-busca{
+    display: flex;
+    justify-content: center;
+    margin: auto 15px auto;
     width: 500px;
     height: 40px;
     background-color: white;
     border-radius: 6px;
 }
 
+#icon-lupa{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+#botao-busca{
+    padding: 7px;
+    margin: 0px;
+}
+
 #input-busca{
     font-family: 'Montserrat';
     font-size: 12px;
     border: none;
-    margin: auto 20px auto;
+    margin: auto 20px auto 10px;
     height: 35px;
+    width: 400px;
 }
 
-#botao-de-menu{
+#input-busca:active{
+    border: none;
+}
 
+#botao-cesta{
+    border: 2px red;
 }
 
 #link-categorias{
