@@ -43,12 +43,36 @@ html::-webkit-scrollbar-thumb{
     background: var(--black);
 }
 
-body{
-    height: 300rem;
-}
+
 
 section{
     padding: 5rem 9%;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.heading::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: .01rem;
+    background: rgba(0,0,0,.1);
+    z-index: -1;
+}
+
+.heading span{
+    font-size: 3rem;
+    padding: .5rem 2rem;
+    color: var(--black);
+    background: #fff;
+    border: var(--border);
 }
 
 .btn{
@@ -334,9 +358,137 @@ strong{
     padding: 1rem 0;
 }
 
+.destaques .slider-destaques .box, .novidades .slider-novidades .box{
+    display: block;
+    width: 25rem;
+    margin: 2rem 0;
+    position: relative;
+    overflow: hidden;
+    border: var(--border);
+    text-align: center;
+}
 
+.destaques .slider-destaques .box:hover, 
+.novidades .slider-novidades .box:hover{
+    border: var(--border-hover);
+}
 
+.destaques .slider-destaques .box .image{
+    padding: 1rem;
+    background: #fff;
+    /* background: linear-gradient(15deg, #eee 30%, #fff 30.1%); */
+}
 
+.destaques .slider-destaques .box .image img{
+    height: 25rem;
+}
+
+.destaques .slider-destaques .box .icons{
+    border-bottom: var(--border-hover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    transform: translateY(-100%);
+}
+
+.destaques .slider-destaques .box:hover .icons{
+    transform: translateY(0%);
+}
+
+.destaques .slider-destaques .box .icons a{
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: 1.3rem 1.5rem;
+}
+
+.destaques .slider-destaques .box .icons a:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+.destaques .slider-destaques .box .content{
+    background: #eee;
+    padding: 1.5rem;
+}
+
+.destaques .slider-destaques .box .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.destaques .slider-destaques .box .content .price{ 
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-top: 1rem;
+}
+
+.destaques .slider-destaques .box .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+
+.destaques .swiper-button-next, .destaques .swiper-button-prev{
+    color: var(--green);
+    height: 4rem;
+    width: 4rem;
+}
+
+.novidades .slider-novidades .box{
+    margin: 1rem 0;
+}
+
+.novidades .slider-novidades .box:hover{
+    border: var(--border-hover);
+}
+
+.novidades .slider-novidades .box .image img{
+    height:25rem;
+}
+
+.novidades .slider-novidades .box .content h3{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.novidades .slider-novidades .box .content .price{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.novidades .slider-novidades .box .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+
+.novidades .slider-novidades .box .content .stars{
+    font-size: 1.5rem;
+    color: var(--green);
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    height: 7rem;
+    text-align: center;  
+    background: var(--green);
+}
+
+.footer nav a{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 3rem;
+}
+
+.footer nav a:hover{
+    background-color: var(--dark-color);
+}
 
 
 
