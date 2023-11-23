@@ -154,6 +154,7 @@ def area_admin():
         print("2 - Remover Livro")
         print("3 - Adicionar Promoção")
         print("4 - Listar Livros")
+        print("5 - Listar Clientes")
         print("0 - Sair")
 
         escolha_admin = input("Escolha uma ação: ")
@@ -166,6 +167,8 @@ def area_admin():
             adicionar_promocao()
         elif escolha_admin == '4': 
             listar_livros('admin')
+        elif escolha_admin == '5': 
+            listar_clientes()
         elif escolha_admin == '0': 
             print('Saindo da área de admin.')
             area_inicio()
@@ -391,6 +394,25 @@ def concluir_compra(carrinho, total_valor):
     else:
         print("Forma de pagamento inválida. Transação cancelada.")  
 
+
+def listar_clientes(): 
+  conn = conectar_bd() 
+  cur = conn.cursor() 
+
+  cur.execute(''' SELECT Username, Senha FROM Cliente''')
+
+  clients = cur.fetchall() 
+
+  if not clients: 
+    print("Nenhum cliente foi registrado ainda.")
+    area_admin() 
+  else: 
+    print("Lista de Clientes (Username, Senha)")
+    for client in clients: 
+      print(f'{client}')
+    
+  area_admin()
+  
 
 def adicionar_promocao():
     conn = conectar_bd()
