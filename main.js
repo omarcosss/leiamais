@@ -58,19 +58,21 @@ var swiper = new Swiper(".slider-destaques", {
     breakpoints: {
         0: {
             slidesPerView: 1,
+            centeredSlides: true,
         },
         768: {
             slidesPerView: 2,
+            centeredSlides:false,
         },
         1024: {
             slidesPerView: 4,
+            centeredSlides:false,
         },
     },
 });
 
 var swiper = new Swiper(".slider-novidades", {
     spaceBetween:10,
-    centeredSlides:false,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -78,12 +80,15 @@ var swiper = new Swiper(".slider-novidades", {
     breakpoints: {
         0: {
             slidesPerView: 1,
+            centeredSlides: true,
         },
         768: {
             slidesPerView: 2,
+            centeredSlides:false,
         },
         1024: {
             slidesPerView: 4,
+            centeredSlides:false,
         },
     },
 });
