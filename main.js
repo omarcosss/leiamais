@@ -34,11 +34,7 @@ window.onload = () =>{
 var swiper = new Swiper(".books-slider", {
     slidesPerView: 3,
     spaceBetween:150,
-    centeredSlides:true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+    centeredSlides:false,
     breakpoints: {
         0: {
           slidesPerView: 1,
@@ -53,45 +49,41 @@ var swiper = new Swiper(".books-slider", {
 });
 
 var swiper = new Swiper(".slider-destaques", {
-    spaceBetween:10,
-    centeredSlides:true,
+    spaceBetween:20,
+    centeredSlides:false,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
     breakpoints: {
         0: {
-            slidesPerView: 1,
+            slidesPerView: 2,
         },
         768: {
             slidesPerView: 2,
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
     },
 });
 
 var swiper = new Swiper(".slider-novidades", {
     spaceBetween:10,
-    centeredSlides:true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    centeredSlides:false,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     breakpoints: {
         0: {
-            slidesPerView: 1,
+            slidesPerView: 2,
         },
         768: {
             slidesPerView: 2,
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
     },
 });

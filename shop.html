@@ -21,7 +21,7 @@
 <header class="header">
     <div class="header-1">
 
-        <a href="/index.html" class="logo">Leia<strong>Mais</strong></a>
+        <a href="#" class="logo">Leia<strong>Mais</strong></a>
     
         <form action="" class="form-busca">
             <input type="search" name="" placeholder="qual livro você procura?" id="campo-busca">
@@ -41,16 +41,17 @@
             <a href="#inicio">inicio</a>
             <a href="#destaques">destaques</a>
             <a href="#novidades">novidades</a>
+            <a href="#avaliacoes">avaliações</a>
         </nav>
     </div>
-        
 </header>
 
 <!-- navbar inferior para mobile -->
 <nav class="bottom-navbar">
-    <a href="/index.html" class="fas fa-home"></a>
-    <a href="#destaques" class="fas fa-trophy"></a>
-    <a href="#novidades" class="fas fa-star"></a>
+    <a href="#inicio" class="fas fa-home"></a>
+    <a href="#destaques" class="fas fa-list"></a>
+    <a href="#novidades" class="fas fa-tags"></a>
+    <a href="#avaliacoes" class="fas fa-comments"></a>
 </nav>
 
 <!-- formulario de login -->
@@ -76,44 +77,6 @@
 
 </div>
 
-
-
-
-
-<!-- pagina home -->
-
-<section class="banner">
-    <img src="/assets/livros/banner.png" width="100%" alt="">
-</section>
-
-<!-- <section class="home" id="home">
-
-    <div class="row">
-
-        <div class="content">
-            <h3>até 73% de desconto</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at elementum metus, quis porttitor dui. Sed eu nibh pellentesque magna dapibus lobortis.</p>
-            <a href="#" class="btn">Comprar</a>
-        </div>
-
-        <div class="swiper books-slider">
-            <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img src="/assets/livros/biblioteca da meia noite.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/assets/livros/amanha amanha amanha.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/assets/livros/mr mercedes.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/assets/livros/o vilarejo.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/assets/livros/percy jackson ladrão de raios.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/assets/livros/vespera.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="/assets/livros/viola davis.jpg" alt=""></a>
-            </div>
-            <div class="swiper-pagination"></div>
-
-        </div>
-
-    </div>
-
-</section> -->
-
 <!-- seção em destaque -->
 
 <section class="destaques" id="destaques">
@@ -123,8 +86,8 @@
     <div class="swiper slider-destaques">
 
         <div class="swiper-wrapper">
-            <a href="/produto.html">
-                <div class="produto-container swiper-slide">
+
+            <div class="produto-container swiper-slide">
                 <div class="produto">
                     <img src="assets/livros/biblioteca da meia noite.jpg" alt="">
                     <div class="desc">
@@ -141,8 +104,6 @@
                     <a href="#"> <i class="fas fa-basket-shopping cesta"></i></a>
                 </div>
             </div>
-            </a>
-            
 
             <div class="produto-container swiper-slide">
                 <div class="produto">
@@ -253,131 +214,6 @@
             </div>
             
             
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-    </div>
-
-</section>
-
-<!-- seção novidades  AINDA NÃO TERMINADA-->
-
-<section class="novidades" id="novidades">
-
-    <h1 class="heading"> <span>Novidades</span> </h1>
-
-    <div class="swiper slider-novidades">
-
-        <div class="swiper-wrapper">
-            <div class="produto-container swiper-slide">
-                <div class="produto">
-                    <img src="assets/livros/a cinco passos de voce.jpg" alt="">
-                    <div class="desc">
-                        <h5>A cinco passos de você</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$46,00</h4>
-                    </div>
-                    <a href="#"> <i class="fas fa-basket-shopping cesta"></i></a>
-                </div>
-            </div>
-
-            <div class="produto-container swiper-slide">
-                <div class="produto">
-                    <img src="assets/livros/nao sobrou nenhhum.jpg" alt="">
-                    <div class="desc">
-                        <h5>E Não Sobrou Nenhum</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$46,00</h4>
-                    </div>
-                    <a href="#"> <i class="fas fa-basket-shopping cesta"></i></a>
-                </div>
-            </div>
-
-            <div class="produto-container swiper-slide">
-                <div class="produto">
-                    <img src="assets/livros/o vilarejo.jpg" alt="">
-                    <div class="desc">
-                        <h5>O Vilarejo</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$46,00</h4>
-                    </div>
-                    <a href="#"> <i class="fas fa-basket-shopping cesta"></i></a>
-                </div>
-            </div>
-
-            <div class="produto-container swiper-slide">
-                <div class="produto">
-                    <img src="assets/livros/percy jackson ladrão de raios.jpg" alt="">
-                    <div class="desc">
-                        <h5>Percy Jackson e o Ladrão de Raios</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$46,00</h4>
-                    </div>
-                    <a href="#"> <i class="fas fa-basket-shopping cesta"></i></a>
-                </div>
-            </div>
-
-            <div class="produto-container swiper-slide">
-                <div class="produto">
-                    <img src="assets/livros/rainha charlotte.jpg" alt="">
-                    <div class="desc">
-                        <h5>Rainha Charlotte</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$46,00</h4>
-                    </div>
-                    <a href="#"> <i class="fas fa-basket-shopping cesta"></i></a>
-                </div>
-            </div>
-
-            <div class="produto-container swiper-slide">
-                <div class="produto">
-                    <img src="assets/livros/vespera.jpg" alt="">
-                    <div class="desc">
-                        <h5>Véspera</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4>R$46,00</h4>
-                    </div>
-                    <a href="#"> <i class="fas fa-basket-shopping cesta"></i></a>
-                </div>
-            </div>
-
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
