@@ -24,6 +24,14 @@
     background: none;
 }
 
+a{
+    color:#106F6F;
+}
+
+a:hover{
+    color: #000000;
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -474,6 +482,7 @@ strong{
 }
 
 .produto-container .produto{
+    display: inline-block;
     width: 23%;
     min-width: 250px;
     padding: 10px 12px;

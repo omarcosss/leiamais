@@ -1,81 +1,8 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="msapplication-navbutton-color" content="#17ADB4">
-    <meta name="theme-color" content="#17ADB4">
-    <title>LeiaMais</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-
-</head>
+<%- include('./partials/head.ejs') %>
 
 <body>
-<header class="header">
-    <div class="header-1">
-
-        <a href="#" class="logo">Leia<strong>Mais</strong></a>
-    
-        <form action="" class="form-busca">
-            <input type="search" name="" placeholder="qual livro você procura?" id="campo-busca">
-            <label for="campo-busca" class="fas fa-search"></label>
-        </form>
-
-        <div class="icons">
-            <div id="search-btn" class="fas fa-search"></div>
-            <a href="#" class="fas fa-basket-shopping"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <div id="login-btn" class="fas fa-user"></div>
-        </div>
-    </div>
-    
-    <div class="header-2">
-        <nav class="navbar">
-            <a href="#inicio">inicio</a>
-            <a href="#destaques">destaques</a>
-            <a href="#novidades">novidades</a>
-            <a href="#avaliacoes">avaliações</a>
-        </nav>
-    </div>
-</header>
-
-<!-- navbar inferior para mobile -->
-<nav class="bottom-navbar">
-    <a href="#inicio" class="fas fa-home"></a>
-    <a href="#destaques" class="fas fa-list"></a>
-    <a href="#novidades" class="fas fa-tags"></a>
-    <a href="#avaliacoes" class="fas fa-comments"></a>
-</nav>
-
-<!-- formulario de login -->
-<div class="login-form-container">
-
-    <div id="close-login-btn" class="fas fa-times"></div>
-    
-    <form action="">
-        <h3>Entrar</h3>
-        <span>Nome de Usuário</span>
-        <input type="email" name="" class="box" placeholder="digite seu email ou user">
-        <span>Senha</span>
-        <input type="password" name="" class="box" placeholder="digite a sua senha">
-        <div class="checkbox">
-            <input type="checkbox" name="" id="lembrar-de-mim">
-            <label for="lembrar-de-mim">Lembrar de mim</label>
-        </div>
-        <input type="submit" value="Entrar" class="btn">
-        <input type="submit" value="Cadastre-se" class="btn cadastro">
-        <!-- <p><a href="#">Criar conta</a></p> -->
-        <p><a href="#">Esqueci minha senha</a></p>
-    </form>
-
-</div>
+<%- include('./partials/header.ejs') %>
 
 <!-- seção em destaque -->
 
@@ -89,7 +16,7 @@
 
             <div class="produto-container swiper-slide">
                 <div class="produto">
-                    <img src="assets/livros/biblioteca da meia noite.jpg" alt="">
+                    <img src="livros/biblioteca da meia noite.jpg" alt="">
                     <div class="desc">
                         <h5>Biblioteca da Meia Noite</h5>
                         <div class="star">
@@ -107,7 +34,7 @@
 
             <div class="produto-container swiper-slide">
                 <div class="produto">
-                    <img src="assets/livros/a cinco passos de voce.jpg" alt="">
+                    <img src="livros/a cinco passos de voce.jpg" alt="">
                     <div class="desc">
                         <h5>A cinco passos de você</h5>
                         <div class="star">
@@ -125,7 +52,7 @@
 
             <div class="produto-container swiper-slide">
                 <div class="produto">
-                    <img src="assets/livros/nao sobrou nenhhum.jpg" alt="">
+                    <img src="livros/nao sobrou nenhhum.jpg" alt="">
                     <div class="desc">
                         <h5>E Não Sobrou Nenhum</h5>
                         <div class="star">
@@ -143,7 +70,7 @@
 
             <div class="produto-container swiper-slide">
                 <div class="produto">
-                    <img src="assets/livros/o vilarejo.jpg" alt="">
+                    <img src="livros/o vilarejo.jpg" alt="">
                     <div class="desc">
                         <h5>O Vilarejo</h5>
                         <div class="star">
@@ -161,7 +88,7 @@
 
             <div class="produto-container swiper-slide">
                 <div class="produto">
-                    <img src="assets/livros/percy jackson ladrão de raios.jpg" alt="">
+                    <img src="livros/percy jackson ladrão de raios.jpg" alt="">
                     <div class="desc">
                         <h5>Percy Jackson e o Ladrão de Raios</h5>
                         <div class="star">
@@ -179,7 +106,7 @@
 
             <div class="produto-container swiper-slide">
                 <div class="produto">
-                    <img src="assets/livros/rainha charlotte.jpg" alt="">
+                    <img src="livros/rainha charlotte.jpg" alt="">
                     <div class="desc">
                         <h5>Rainha Charlotte</h5>
                         <div class="star">
@@ -197,7 +124,7 @@
 
             <div class="produto-container swiper-slide">
                 <div class="produto">
-                    <img src="assets/livros/vespera.jpg" alt="">
+                    <img src="livros/vespera.jpg" alt="">
                     <div class="desc">
                         <h5>Véspera</h5>
                         <div class="star">
@@ -234,19 +161,7 @@
         <a href="">Sobre nós</a>
     </nav>
 
-</section>
-
-
-
-
-
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="main.js"></script>
+    <%- include('./partials/footer.ejs') %>
 
 </body>
 </html>
