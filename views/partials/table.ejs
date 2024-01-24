@@ -1,0 +1,31 @@
+    <div class="swiper slider-destaques">
+
+        <div class="produto-table">
+
+        <% table.forEach(e => { %>
+            <div class="produto-container">
+                <div class="produto">
+                    <a href="/produto!<%= e._id %>">
+                    <img src="livros/<%= e._id %>.jpg" alt="">
+                    <div class="desc">
+                        <h5><%= e.titulo %></h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>R$<%= Number(e.valor).toFixed(2) %></h4>
+                    </div>
+                    </a>
+                    <a href="/produto!<%= e._id %>"> <i class="fas fa-basket-shopping cesta"></i></a>
+                </div>
+            </div>
+         
+        <% }) %>
+        </div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+
+    </div>

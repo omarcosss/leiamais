@@ -43,6 +43,10 @@ const Livro = db.define('Livro', {
     valorfinal: {
         type: Sequelize.DECIMAL(5,2),
         default: 0.00
+    },
+    sinopse: {
+        type: Sequelize.STRING,
+        default: "(Sinopse)"
     }
 })
 

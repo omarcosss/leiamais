@@ -21,9 +21,11 @@ app.use(express.static('assets'));
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: true}));
 
-app.get('/', (req, res)=>{
-    res.render('index', {title: 'Início'})
-});
-
+app.get('/', livroCtrl.livro_get_home);
 app.post('/produtos', livroCtrl.livro_post);
-app.get('/produtos/:id', livroCtrl.livro_get_id);
+app.get('/produtos', livroCtrl.livro_get_shop);
+app.get('/produto!:id', livroCtrl.livro_get_id);
+
+app.use((req,res)=>{
+    res.status(404).render('404', {title: '404'});
+})

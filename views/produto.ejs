@@ -7,21 +7,21 @@
 <section id="detalhes-prod" class="section-produto">
 
     <div class="single-prod-img">
-        <img src="/livros/biblioteca da meia noite.jpg" width="100%" id="mainimg" alt="">
+        <img src="/livros/<%= result._id %>.jpg" width="100%" id="mainimg" alt="">
         
     </div>
 
     <div class="single-prod-detalhes">
-        <h6>Início / Livro</h6>
-        <h4><%= result.titulo %></h4>
-        <h2>R$48,90</h2>
+        <h5 class="page-path"><a href="/">Início</a> / <%= result.categoria %> / <%= result.titulo %></h6>
+        <h4><%= result.titulo %><br><%= result.autor %></h4>
+        <h2>R$<%= Number(result.valor).toFixed(2) %></h2>
         <input type="number" value="1">
         <button class="btn">
             <i class="fas fa-basket-shopping icon-botao-cesta"></i>
             Comprar
         </button>
         <h4>Detalhes</h4>
-        <span>A Biblioteca da Meia-Noite é um romance incrível que fala dos infinitos rumos que a vida pode tomar e da busca incessante pelo rumo certo.</span>
+        <span><%= result.sinopse %></span>
     </div>
 
 </section>
@@ -29,8 +29,9 @@
 <section class="destaques" id="destaques">
 
     <h1 class="heading"> <span>Livros em destaque</span></h1>
+    <%- include('./partials/table.ejs') %>
 
-    <div class="swiper slider-destaques">
+    <!-- <div class="swiper slider-destaques">
 
         <div class="swiper-wrapper">
 
@@ -147,7 +148,7 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 
-    </div>
+    </div> -->
 
 </section>
 
